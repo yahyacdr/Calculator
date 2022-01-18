@@ -1,0 +1,48 @@
+:root {
+    --SublimeLight: linear-gradient(to right, #FC5C7D, #6A82FB);
+}
+
+input {
+    position: relative;
+    top: 17em;
+    width: 24.3em;
+    height: 4em;
+    border-color: #6A82FB;
+    border-radius: 1em;
+    margin-left: 43.8em;
+}
+
+table {
+    position: relative;
+    top: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button {
+    border: none;
+    background: var(--SublimeLight);
+    width: 6em;
+    height: 4.5em;
+    border-radius: 1em;
+    text-align: center;
+    color: whitesmoke;
+    padding: 0;
+}
+
+td button span {
+    position: relative;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: whitesmoke;
+}
+
+.eq {
+    width: 12em;
+    height: 4.5em;
+}
+
+.clear span {
+    font-size: 16px;
+}
