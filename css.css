@@ -2,6 +2,8 @@
     --SublimeLight: linear-gradient(to right, #FC5C7D, #6A82FB);
 }
 
+
+
 input {
     position: relative;
     top: 17em;
@@ -45,4 +47,85 @@ td button span {
 
 .clear span {
     font-size: 16px;
+}
+
+@media only screen and (max-width: 1080px) {
+    input {
+        position: relative;
+        top: 700px;
+        right: 42em;
+        height: 8em;
+        width: 60.5em;
+    }
+
+    table {
+        position: relative;
+        top: 750px;
+        right: 0em;
+    }
+
+    button {
+        width: 15em;
+        height: 10em;
+    }
+
+    .eq {
+        width: 30em;
+        height: 10em;
+    }
+
+    td button span {
+        font-size: 40px;
+    }
+
+    .clear span {
+        font-size: 38px;
+    }
+
+    body {
+        -ms-overflow-style: none;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    input {
+        position: relative;
+        top: 32em;
+        right: 42.8em;
+        height: 6em;
+        width: 40em;
+    }
+
+    table {
+        position: relative;
+        top: 30em;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button {
+        width: 10em;
+        height: 6em;
+        border-radius: 0.6em;
+    }
+
+    .eq {
+        width: 20.2em;
+        height: 6em;
+    }
+
+    td button span {
+        font-size: 25px;
+    }
+
+    .clear span {
+        font-size: 18px;
+    }
+
+    body {
+        -ms-overflow-style: none;
+        overflow-x: hidden;
+    }
 }
