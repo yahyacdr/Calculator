@@ -90,11 +90,12 @@ td button span {
 
 @media only screen and (max-width: 360px) {
     input {
-        position: relative;
-        top: 32em;
-        right: 42.8em;
-        height: 6em;
-        width: 40em;
+            position: relative;
+            top: 11em;
+            right: 44em;
+            height: 5em;
+            width: 20em;
+            border-width: thick;
     }
 
     table {
