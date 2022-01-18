@@ -92,7 +92,7 @@ td button span {
     input {
             position: relative;
             top: 11em;
-            right: 44em;
+            right: 43.6em;
             height: 5em;
             width: 20em;
             border-width: thick;
@@ -100,7 +100,7 @@ td button span {
 
     table {
         position: relative;
-        top: 30em;
+        top: 10em;
         right: 0;
         margin-left: auto;
         margin-right: auto;
