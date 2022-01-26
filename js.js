@@ -18,7 +18,6 @@ table.addEventListener('click', function(e){
         let op = inputField.value
         op = op.trim()
         nums = op.split(' ')
-        console.log(nums)
         let o = 0;
         while(o < nums.length){
             if (nums[o] === 'x'){
@@ -47,7 +46,6 @@ table.addEventListener('click', function(e){
             }
             o++
         }
-        console.log('math after mult and div ', nums)
         for (let i = 0; i < nums.length; i++){
 
             j = i
