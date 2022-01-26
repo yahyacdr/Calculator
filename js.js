@@ -7,7 +7,7 @@ let j
 table.addEventListener('click', function(e){
     if (e.target.innerText !== '=' && e.target.innerText !== 'Clear'){
 
-        if (Number.isNaN(parseInt(e.target.innerText))){
+        if (Number.isNaN(parseFloat(e.target.innerText))){
             inputField.value += ' ' + e.target.innerText + ' '
         } else {
             inputField.value += e.target.innerText
@@ -24,40 +24,37 @@ table.addEventListener('click', function(e){
             if (nums[o] === 'x'){
 
                 j = o
-                console.log(nums)
-                a = parseInt(nums[j-=1])*parseInt(nums[j+=2])
+                a = parseFloat(nums[j-=1])*parseFloat(nums[j+=2])
                 nums[j] = a
 
                 for (let s = 0; s < 2; s++){
                     nums.splice(--j, 1)
                 }
 
-                console.log(nums)
-                i = 0
+                o = 0
             }
             if (nums[o] === '/'){
 
                 j = o
-                console.log(nums)
-                a = parseInt(nums[j-=1])/parseInt(nums[j+=2])
+                a = parseFloat(nums[j-=1])/parseFloat(nums[j+=2])
                 nums[j] = a
 
                 for (let s = 0; s < 2; s++){
                     nums.splice(--j, 1)
                 }
 
-                console.log(nums)
-                i = 0
+                o = 0
             }
             o++
         }
+        console.log('math after mult and div ', nums)
         for (let i = 0; i < nums.length; i++){
 
             j = i
 
             if (nums[i] === '+'){
 
-                a = parseInt(nums[j-=1])+parseInt(nums[j+=2])
+                a = parseFloat(nums[j-=1])+parseFloat(nums[j+=2])
                 nums[j] = a
 
                 for (let s = 0; s < 2; s++){
@@ -68,14 +65,13 @@ table.addEventListener('click', function(e){
             }
             if (nums[i] === '-'){
 
-                a = parseInt(nums[j-=1])-parseInt(nums[j+=2])
+                a = parseFloat(nums[j-=1])-parseFloat(nums[j+=2])
                 nums[j] = a
 
                 for (let s = 0; s < 2; s++){
                     nums.splice(--j, 1)
                 }
 
-                console.log(nums)
                 i = 0
             }
         }
